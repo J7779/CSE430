@@ -1,54 +1,65 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Navbar from "./components/navbar"; // Import the Navbar component
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <Navbar /> {/* Include the Navbar here */}
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        {/* Top image for Handcrafted Haven */}
+        <div className={styles.heroImageContainer}>
+          <Image
+            className={styles.heroImage}
+            src="/sitemain.png" // Using the specified image from the public folder
+            alt="Handcrafted Haven main image"
+            width={1000} // Adjust as needed
+            height={400} // Adjust as needed
+            priority
+          />
+          <h1 className={styles.animatedTitle}>
+            Welcome to Handcrafted Haven!
+          </h1>
+        </div>
+
+        <p className={styles.tagline}>Discover unique handmade treasures.</p>
+
+        <section className={styles.featureSection}>
+          <div className={styles.featureItem}>
+            <h2>Artisan Quality</h2>
+            <p>Every item is lovingly crafted by skilled artisans.</p>
+            <div className={styles.featureIcon}> </div>
+          </div>
+          <div className={styles.featureItem}>
+            <h2>Unique Creations</h2>
+            <p>Find one-of-a-kind pieces that tell a story.</p>
+            <div className={styles.featureIcon}> </div>
+          </div>
+          <div className={styles.featureItem}>
+            <h2>Support Local</h2>
+            <p>Empower small businesses and independent makers.</p>
+            <div className={styles.featureIcon}> </div>
+          </div>
+        </section>
 
         <div className={styles.ctas}>
           <a
             className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/shop" // Example link to a shop page
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Explore Our Collection
           </a>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/about" // Example link to an about page
             className={styles.secondary}
           >
-            Read our docs
+            Learn More About Us
           </a>
         </div>
       </main>
       <footer className={styles.footer}>
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="#" // Placeholder link
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -59,10 +70,10 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          Privacy Policy
         </a>
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="#" // Placeholder link
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -73,10 +84,10 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          Terms of Service
         </a>
         <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="#" // Placeholder link
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -87,7 +98,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Contact Us
         </a>
       </footer>
     </div>
