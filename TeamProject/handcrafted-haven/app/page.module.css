@@ -341,3 +341,270 @@ a.secondary {
     transform: translateY(0);
   }
 }
+/* Add these styles to your existing page.module.css file */
+
+/* About Page Specific Styles */
+.aboutHero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.aboutHeroImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6; /* Slightly dim the image for text readability */
+  filter: grayscale(30%); /* Optional: add a slight grayscale */
+}
+
+.aboutHeroOverlay {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for text */
+  border-radius: 10px;
+}
+
+.aboutHeroTitle {
+  font-size: 3.5em;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.aboutHeroTagline {
+  font-size: 1.4em;
+  font-style: italic;
+  color: var(--light-text-color);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: left;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.aboutText {
+  flex: 2;
+  min-width: 300px;
+}
+
+.aboutText h2 {
+  color: var(--primary-color);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.aboutText p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  font-size: 1.1em;
+}
+
+.aboutImageContainer {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImage {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutImage:hover {
+  transform: scale(1.03);
+}
+
+.valuesSection {
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 40px;
+  margin-top: 50px;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.valuesSection h2 {
+  color: var(--primary-color);
+  font-size: 2.8em;
+  margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.valueItem {
+  background-color: #3a404c; /* Slightly lighter dark for contrast */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 1px solid var(--accent-color);
+}
+
+.valueItem:hover {
+  transform: translateY(-5px);
+}
+
+.valueItem h3 {
+  color: var(--accent-color);
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+}
+
+.valueItem p {
+  color: var(--light-text-color);
+  line-height: 1.7;
+}
+
+.callToAction {
+  margin-top: 80px;
+  padding: 60px 40px;
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  color: var(--secondary-color); /* Dark text on light background */
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 90%;
+}
+
+.callToAction h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  color: var(--secondary-color);
+}
+
+.callToAction p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: var(--secondary-color);
+}
+
+.callToAction .primary {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.callToAction .primary:hover {
+  background: #000;
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments for about page */
+@media (max-width: 900px) {
+  .aboutHero {
+    height: 300px;
+  }
+  .aboutHeroTitle {
+    font-size: 2.8em;
+  }
+  .aboutHeroTagline {
+    font-size: 1.2em;
+  }
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutText h2 {
+    font-size: 2em;
+  }
+  .aboutText p {
+    font-size: 1em;
+  }
+  .valuesSection {
+    padding: 30px 20px;
+  }
+  .valuesSection h2 {
+    font-size: 2.2em;
+  }
+  .callToAction {
+    padding: 40px 20px;
+  }
+  .callToAction h2 {
+    font-size: 2.5em;
+  }
+  .callToAction p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutHero {
+    height: 250px;
+  }
+  .aboutHeroTitle {
+    font-size: 2em;
+  }
+  .aboutHeroTagline {
+    font-size: 1em;
+  }
+  .aboutContent {
+    gap: 30px;
+  }
+  .aboutText h2 {
+    font-size: 1.8em;
+  }
+  .valuesSection h2 {
+    font-size: 2em;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  .valueItem h3 {
+    font-size: 1.4em;
+  }
+  .callToAction {
+    margin-top: 50px;
+    padding: 30px 15px;
+  }
+  .callToAction h2 {
+    font-size: 2em;
+  }
+  .callToAction p {
+    font-size: 1em;
+  }
+  .callToAction .primary {
+    padding: 12px 30px;
+    font-size: 1.1em;
+  }
+}
