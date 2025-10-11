@@ -35,14 +35,14 @@ export default function Services() {
               <h3>Custom Enchanted Crafts</h3>
               <p>
                 Commission bespoke magical items tailored to your desires.
-                Whether it's a whispering amulet or a levitating sculpture, our
-                artisans will craft it with Livathina's ancient magic.
+                Whether it&apos;s a whispering amulet or a levitating sculpture, our
+                artisans will craft it with Livathina&apos;s ancient magic.
               </p>
             </div>
             <div className={styles.valueItem}>
               <h3>Magical Workshops</h3>
               <p>
-                Join our immersive workshops where you'll learn to infuse
+                Join our immersive workshops where you&apos;ll learn to infuse
                 everyday items with enchantment. Perfect for those seeking to
                 bring a touch of Livathina into their creations.
               </p>

@@ -13,6 +13,8 @@ export default function MapPage() {
   useEffect(() => {
     if (!mountRef.current) return;
 
+    const mount = mountRef.current;
+
     // Scene
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x87ceeb); // Sky blue
@@ -190,7 +192,7 @@ export default function MapPage() {
     // Cleanup
     return () => {
       window.removeEventListener("resize", handleResize);
-      mountRef.current?.removeChild(renderer.domElement);
+      mount?.removeChild(renderer.domElement);
       renderer.dispose();
     };
   }, []);

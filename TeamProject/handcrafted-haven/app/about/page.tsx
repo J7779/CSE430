@@ -65,7 +65,7 @@ export default function About() {
               <h3>Unique Enchantments</h3>
               <p>
                 From levitating lanterns to whispering mirrors, our collection
-                celebrates the boundless imagination of Livathina's magical
+                celebrates the boundless imagination of Livathina&apos;s magical
                 makers.
               </p>
             </div>
