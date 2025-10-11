@@ -1,6 +1,5 @@
 import Navbar from "../components/navbar";
 import styles from "../page.module.css";
-import Image from "next/image"; // Import Image component
 
 export default function About() {
   return (
@@ -8,126 +7,98 @@ export default function About() {
       <Navbar />
       <main className={styles.main}>
         <section className={styles.aboutHero}>
-          <Image
-            src="/about-hero.png" // You'll need to add an image for your about hero
-            alt="About Handcrafted Haven"
-            width={1200}
-            height={400}
-            className={styles.aboutHeroImage}
-            priority
-          />
+          <div className={styles.heroBackground}></div>
           <div className={styles.aboutHeroOverlay}>
-            <h1 className={styles.aboutHeroTitle}>Our Story</h1>
+            <h1 className={styles.aboutHeroTitle}>Our Enchanted Origins</h1>
             <p className={styles.aboutHeroTagline}>
-              Passionately bringing unique artisan crafts to your home.
+              Where the magic of Livathina meets the art of craftsmanship.
             </p>
           </div>
         </section>
 
         <section className={styles.aboutContent}>
           <div className={styles.aboutText}>
-            <h2>The Heart Behind Handcrafted Haven</h2>
+            <h2>The Magic of Livathina</h2>
             <p>
-              Handcrafted Haven was born from a deep appreciation for the art of
-              handmade goods and the talented artisans who create them. We
-              believe that every handmade item carries a piece of its maker&apos;s
-              soul, telling a unique story of dedication, creativity, and skill.
+              In the enchanted realm of Livathina, where ancient forests whisper
+              secrets and crystal rivers sing lullabies, our artisans have long
+              crafted wonders from the very essence of magic. Handcrafted Haven
+              serves as the mystical bridge between this hidden world and yours,
+              bringing forth treasures imbued with the pure enchantment of
+              Livathina.
             </p>
             <p>
-              Our mission is to create a vibrant marketplace where these stories
-              can be shared, and where customers can discover unique,
-              high-quality treasures that add character and warmth to their
-              lives. We are committed to supporting independent artisans and
-              fostering a community that values craftsmanship and
-              sustainability.
+              Each piece tells a story of ancient spells woven into fabric,
+              potions distilled into perfumes, and dreams sculpted into art. Our
+              mission is to share these magical creations with those who seek
+              wonder in their everyday lives, fostering a connection between the
+              mundane and the marvelous.
             </p>
           </div>
           <div className={styles.aboutImageContainer}>
-            <Image
-              src="/mission.png" // Another image for your mission/values
-              alt="Our Mission"
-              width={500}
-              height={300}
-              className={styles.aboutImage}
-            />
+            <div className={styles.missionPlaceholder}>
+              <p>✨ Enchanted Realm of Livathina ✨</p>
+            </div>
           </div>
         </section>
 
         <section className={styles.valuesSection}>
-          <h2>Our Core Values</h2>
+          <h2>Our Enchanted Principles</h2>
           <div className={styles.valuesGrid}>
             <div className={styles.valueItem}>
-              <h3>Quality Craftsmanship</h3>
+              <h3>Magical Craftsmanship</h3>
               <p>
-                We stand for excellence in every stitch, stroke, and carve. Each
-                product is a testament to meticulous attention to detail.
+                Every creation is infused with the ancient magic of Livathina,
+                ensuring unparalleled quality and wonder in each enchanted
+                piece.
               </p>
             </div>
             <div className={styles.valueItem}>
-              <h3>Artisan Empowerment</h3>
+              <h3>Artisan Harmony</h3>
               <p>
-                We empower creators by providing a platform that celebrates
-                their talent and ensures fair compensation for their hard work.
+                We unite the mystical artisans of Livathina with seekers of
+                magic, providing a realm where creativity flows freely and
+                fairly.
               </p>
             </div>
             <div className={styles.valueItem}>
-              <h3>Unique Expression</h3>
+              <h3>Unique Enchantments</h3>
               <p>
-                We champion individuality, offering a diverse collection of
-                items that reflect a spectrum of artistic visions and styles.
+                From levitating lanterns to whispering mirrors, our collection
+                celebrates the boundless imagination of Livathina's magical
+                makers.
               </p>
             </div>
             <div className={styles.valueItem}>
-              <h3>Community & Connection</h3>
+              <h3>Community of Wonder</h3>
               <p>
-                We foster a strong connection between makers and buyers,
-                building a community that values conscious consumption.
+                Join a fellowship of dreamers and creators, where the magic of
+                Livathina brings people together in harmony and enchantment.
               </p>
             </div>
           </div>
         </section>
 
         <section className={styles.callToAction}>
-          <h2>Join Our Journey</h2>
+          <h2>Enter the Realm of Wonder</h2>
           <p>
-            Explore our collection and become a part of the Handcrafted Haven
-            family.
+            Discover the magical creations of Livathina and let enchantment
+            enter your world.
           </p>
-          <a href="/shop" className={styles.primary}>
-            Shop Now
+          <a href="/services" className={styles.primary}>
+            Explore Our Magic
           </a>
         </section>
       </main>
       <footer className={styles.footer}>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Privacy Policy
+          📜 Enchantment Policy
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Terms of Service
+          🪄 Magical Terms
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Contact Us
+        <a href="/contact" target="_blank" rel="noopener noreferrer">
+          🌍 Contact the Elders
         </a>
       </footer>
     </div>

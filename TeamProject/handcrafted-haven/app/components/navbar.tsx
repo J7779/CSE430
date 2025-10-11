@@ -21,6 +21,11 @@ export default function Navbar() {
           </Link>
         </li>
         <li className={styles.navItem}>
+          <Link href="/map" className={styles.navLink}>
+            Map
+          </Link>
+        </li>
+        <li className={styles.navItem}>
           <Link href="/contact" className={styles.navLink}>
             Contact
           </Link>
