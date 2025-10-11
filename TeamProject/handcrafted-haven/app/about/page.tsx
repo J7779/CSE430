@@ -30,7 +30,7 @@ export default function About() {
             <p>
               Handcrafted Haven was born from a deep appreciation for the art of
               handmade goods and the talented artisans who create them. We
-              believe that every handmade item carries a piece of its maker's
+              believe that every handmade item carries a piece of its maker&apos;s
               soul, telling a unique story of dedication, creativity, and skill.
             </p>
             <p>
